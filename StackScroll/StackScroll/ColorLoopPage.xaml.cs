@@ -9,7 +9,6 @@ namespace StackScroll
 	{
 		public ColorLoopPage ()
 		{
-			InitializeComponent ();
 
 //			var colors = new[]
 //			{

@@ -21,7 +21,7 @@ namespace StackScroll
 //				}
 //			};
 
-			MainPage = new VerticalOptionsDemoPage ();
+			MainPage = new BlackCatPage ();
 		}
 
 		protected override void OnStart ()

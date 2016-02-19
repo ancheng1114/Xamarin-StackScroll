@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,12 +32,12 @@
   <ItemGroup>
     <Compile Include="StackScroll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ColorLoopPage.xaml.cs">
-      <DependentUpon>ColorLoopPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="VerticalOptionsDemoPage.xaml.cs">
-      <DependentUpon>VerticalOptionsDemoPage.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ColorBlocksPage.xaml.cs" />
+    <Compile Include="ColorLoopPage.xaml.cs" />
+    <Compile Include="FramedTextPage.xaml.cs" />
+    <Compile Include="SizedBoxViewPage.xaml.cs" />
+    <Compile Include="VerticalOptionsDemoPage.xaml.cs" />
+    <Compile Include="BlackCatPage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -53,11 +53,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ColorLoopPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VerticalOptionsDemoPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Folder Include="Text\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Text\StackScroll.csproj.FilesWrittenAbsolute.txt" />
   </ItemGroup>
 </Project>

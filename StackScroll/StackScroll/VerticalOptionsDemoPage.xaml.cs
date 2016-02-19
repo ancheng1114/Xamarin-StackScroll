@@ -11,8 +11,7 @@ namespace StackScroll
 	{
 		public VerticalOptionsDemoPage ()
 		{
-			//InitializeComponent ();
-		
+
 			Color [] colors = {Color.Yellow ,Color.Blue};
 			int flipFlopper = 0;
 
